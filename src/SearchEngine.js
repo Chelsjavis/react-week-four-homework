@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import "./index.css";
 
 export default function SearchEngine() {
   const [city, setCity] = useState(null);
@@ -13,7 +14,7 @@ export default function SearchEngine() {
     let iconUrl = `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`;
 
     setWeather(
-      <ul>
+      <ul className="SearchEngine">
         <li>Temperature: {temperature}°C</li>
         <li>Description: {description}</li>
         <li>Humidity: {humidity}%</li>

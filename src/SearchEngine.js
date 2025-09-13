@@ -19,7 +19,7 @@ export default function SearchEngine() {
         <li>Humidity: {humidity}%</li>
         <li>Wind: {wind}km/hr</li>
         <li>
-          <img src={iconUrl} />
+          <img src={iconUrl} alt={description} />
         </li>
       </ul>
     );
